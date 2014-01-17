@@ -1,0 +1,1 @@
+<?php	$id = $_REQUEST['id'];	$url = "http://www.sitewarranty.com/swccommon/F".$id."/seal.png";	$handle = curl_init($url);	curl_setopt($handle,  CURLOPT_RETURNTRANSFER, TRUE);		$response = curl_exec($handle);		$httpCode = curl_getinfo($handle, CURLINFO_HTTP_CODE);	if($httpCode == 404) {			echo "invalid";	}	else	{		echo "valid";	}	curl_close($handle);		?>
