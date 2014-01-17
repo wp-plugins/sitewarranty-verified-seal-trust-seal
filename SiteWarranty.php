@@ -36,7 +36,7 @@ if(isset($_POST['protocol']))
 
 add_action('admin_menu', 'Site_Warranty');
 function Site_Warranty() {
-    add_menu_page('SiteWarranty', 'SiteWarranty', 'administrator', 'warranty_settings', 'Update_id', plugins_url( 'SiteWarranty/img/wordpress-icon16x16.png' ));
+    add_menu_page('SiteWarranty', 'SiteWarranty', 'administrator', 'warranty_settings', 'Update_id', plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-icon16x16.png' ));
 	include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
 	$plugin = 'woocommerce/woocommerce.php';
     if(is_plugin_active($plugin))
@@ -143,13 +143,13 @@ class Sitewarranty extends WP_Widget {
 		<p><table class="wid_img">
 		<tr>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-a.png');?>" width="68" height="85">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-a.png');?>" width="68" height="85">
 			</td>
 			<td valign="middle" style="width: 50px;">
 				<input type="radio" name="<?php echo $this->get_field_name('style'); ?>" id="<?php echo $this->get_field_id('style'); ?>" value="a" <?php if($style=='a') echo"checked";?>>
 			</td>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-b.png');?>" width="68"  height="32">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-b.png');?>" width="68"  height="32">
 			</td>
 			<td valign="middle">
 				<input type="radio" name="<?php echo $this->get_field_name('style'); ?>" id="<?php echo $this->get_field_id('style'); ?>" value="b" <?php if($style=='b') echo"checked";?>>
@@ -157,13 +157,13 @@ class Sitewarranty extends WP_Widget {
 		</tr>
 		<tr>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-c.png');?>" width="68"  height="85">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-c.png');?>" width="68"  height="85">
 			</td>
 			<td valign="middle" style="width: 50px;">
 				<input type="radio" name="<?php echo $this->get_field_name('style'); ?>" id="<?php echo $this->get_field_id('style'); ?>" value="c" <?php if($style=='c') echo"checked";?>>
 			</td>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-d.png');?>" width="68"  height="25">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-d.png');?>" width="68"  height="25">
 			</td>
 			<td valign="middle">
 				<input type="radio" name="<?php echo $this->get_field_name('style'); ?>" id="<?php echo $this->get_field_id('style'); ?>" value="d" <?php if($style=='d') echo"checked";?>>

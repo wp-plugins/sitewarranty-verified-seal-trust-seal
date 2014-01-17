@@ -1,5 +1,5 @@
 <?php
-wp_enqueue_script( 'ava-js', plugins_url( '/js/sw.js', __FILE__ ));
+wp_enqueue_script( 'ava-js', plugins_url( '/sitewarranty-verified-seal-trust-seal/js/sw.js', __FILE__ ));
 	global $wpdb;	  	
 	$id = $wpdb->get_var( "SELECT option_value FROM ".$wpdb->prefix."options WHERE option_name = 'sitewarranty'" );
 	$st = $wpdb->get_var( "SELECT option_value FROM ".$wpdb->prefix."options WHERE option_name = 'sw_style'" );
@@ -16,7 +16,7 @@ wp_enqueue_script( 'ava-js', plugins_url( '/js/sw.js', __FILE__ ));
 	?>	
 	<div class="setting_err err_id" id="err_close">
 		<div style="float:left;">Enter a valid SiteWarranty ID.</div>	
-		<img src="<?php echo plugins_url( 'SiteWarranty/img/close.png'); ?>">			
+		<img src="<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/close.png'); ?>">			
 	</div>
 	<table>
 	<tr>
@@ -37,13 +37,13 @@ Your verification ID is located in your SiteWarranty control panel.
 	<table>
 		<tr>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-a.png');?>">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-a.png');?>">
 			</td>
 			<td valign="middle" style="width: 50px;">
 				<input type="radio" name="style" value="a" <?php if($st=='a') echo"checked";?>>
 			</td>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-b.png');?>">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-b.png');?>">
 			</td>
 			<td valign="middle">
 				<input type="radio" name="style" value="b" <?php if($st=='b') echo"checked";?>>
@@ -51,13 +51,13 @@ Your verification ID is located in your SiteWarranty control panel.
 		</tr>
 		<tr>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-c.png');?>">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-c.png');?>">
 			</td>
 			<td valign="middle" style="width: 50px;">
 				<input type="radio" name="style" value="c" <?php if($st=='c') echo"checked";?>>
 			</td>
 			<td>
-				<img src = "<?php echo plugins_url( 'SiteWarranty/img/wordpress-seal-d.png');?>">
+				<img src = "<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/wordpress-seal-d.png');?>">
 			</td>
 			<td valign="middle">
 				<input type="radio" name="style" value="d" <?php if($st=='d') echo"checked";?>>
@@ -100,13 +100,13 @@ Your verification ID is located in your SiteWarranty control panel.
 		<br>
 		<!-- ad area -->
 		<a href="http://www.emailergo.com" target="_blank">
-			<img src="<?php echo plugins_url( 'SiteWarranty/img/sw_add1.jpg');?>" id="im"/>
+			<img src="<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/sw_add1.jpg');?>" id="im"/>
 		</a>
 		<a href="http://www.responsecontrol.net" target="_blank">
-			<img src="<?php echo plugins_url( 'SiteWarranty/img/sw_add2.jpg');?>" id="im"/>
+			<img src="<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/sw_add2.jpg');?>" id="im"/>
 		</a>
 		<a href="http://www.clixgalore.co.uk" target="_blank">
-			<img src="<?php echo plugins_url( 'SiteWarranty/img/sw_add3.jpg');?>" id="im"/>
+			<img src="<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/sw_add3.jpg');?>" id="im"/>
 		</a>
 	</td>
 	</tr>
@@ -122,7 +122,7 @@ Your verification ID is located in your SiteWarranty control panel.
 		}
 		jQuery.ajax({
 		  type: "GET",
-		  url: '<?=plugins_url()?>/SiteWarranty/validate.php',
+		  url: '<?=plugins_url()?>/sitewarranty-verified-seal-trust-seal/validate.php',
           cache: false,		
 		  data: {id : $id},
 		  success: function(response) {
