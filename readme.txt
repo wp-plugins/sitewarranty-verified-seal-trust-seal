@@ -13,3 +13,4 @@ This type of authentication can increase sales by up to 40% and dramatically inc
 
 1. Upload the files to the `/wp-content/plugins/sitewarranty-verified-seal-trust-seal/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Sign up for a Free SiteWarranty account here: [www.SiteWarranty.com](http://sitewarranty.com) 
