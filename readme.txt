@@ -1,5 +1,5 @@
 === SiteWarranty Verified & Trust Seals ===
-Tags: sitewarranty, seal, trust, plugin
+Tags: trust seal, verified seal, trust, increase conversions
 Requires at least: 3.0.0
 Tested up to: 3.7.1
 
