@@ -9,7 +9,7 @@ wp_enqueue_script( 'ava-js', plugins_url( '/sitewarranty-verified-seal-trust-sea
 	{?>
 		<div class="setting_err">
 			<div style="float:left;">Need a SiteWarranty ID? Sign up for free</div>
-			<a href="http://www.sitewarranty.com/" target="_blank"><div class="signup">Sign Up</div></a>
+			<a href="https://www.sitewarranty.com/cgi-bin/swc/mreg_admin.cgi?register" target="_blank"><div class="signup">Sign Up</div></a>
 		</div>		
 	<?php
 	}
