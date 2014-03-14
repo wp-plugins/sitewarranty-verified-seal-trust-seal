@@ -32,7 +32,7 @@ Your verification ID is located in your SiteWarranty control panel.
 </p>
 	
 <form method = "post" action = "" id="frm">
-	<input type = "text" value = "<?php echo $id; ?>" name = "warranty" id="warranty_no" autocomplete = "off" size="10" onkeyup="if(!this.value.match(/^([0-9]+\s?)*$/i))this.value=this.value.replace(/[^0-9]/ig,'').replace(/\s+/g,' ')"/>	
+	<input type = "text" value = "<?php echo $id; ?>" name = "warranty" id="warranty_no" autocomplete = "off" size="15" maxlength="12" onkeyup="if(!this.value.match(/^([0-9]+\s?)*$/i))this.value=this.value.replace(/[^0-9]/ig,'').replace(/\s+/g,' ')"/>	
 	<h3> Seal Type / Style:</h3>
 	<table>
 		<tr>
