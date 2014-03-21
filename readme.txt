@@ -12,7 +12,7 @@ During the initial verification process we will run various identity checks to c
 
 Verification can take between 24 – 48 hours and successful applicants will be emailed automatically.
 
-For any further information please visit our website or contact us on 0800 0699121.
+For any further information please visit our website or contact us on 01904 789810.
 
 
 == Installation ==
