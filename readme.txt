@@ -1,7 +1,7 @@
 === SiteWarranty Verified & Trust Seals ===
 Tags: Seal, trust seal, verification, increase, sales, conversions, links, link, authentication, covert, visit times, free, widget, plugin, automatic, seo, woocommerce, theme, themes, seo, security, page, site seal
 Requires at least: 3.0.0
-Tested up to: 3.7.1
+Tested up to: 3.9
 
 == Description ==
 
