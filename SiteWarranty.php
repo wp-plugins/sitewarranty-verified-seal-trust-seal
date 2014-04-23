@@ -116,7 +116,7 @@ class Sitewarranty extends WP_Widget {
          
 	public function __construct() {
 		// widget actual processes
-		parent::WP_Widget(false,SiteWarranty,'description=SiteWarranty verified seal');
+		parent::WP_Widget(false,'SiteWarranty','description=SiteWarranty verified seal');
 	}
 
 	public function form( $instance = '' ) {
