@@ -15,7 +15,7 @@ wp_enqueue_script( 'ava-js', plugins_url( '/sitewarranty-verified-seal-trust-sea
 	}
 	?>	
 	<div class="setting_err err_id" id="err_close">
-		<div style="float:left;">Enter a valid SiteWarranty ID.</div>	
+		<div id="new_err" style="float:left;">Enter a valid SiteWarranty ID.</div>	
 		<img src="<?php echo plugins_url( '/sitewarranty-verified-seal-trust-seal/img/close.png'); ?>">			
 	</div>
 	<table>
@@ -130,8 +130,16 @@ Your verification ID is located in your SiteWarranty control panel.
 				{				
 					jQuery("#frm").submit();
 				}
-				else
+				else if(response == 'invalid')
 				{
+					jQuery(".err_id").css({"display":"block"});
+					jQuery("html, body").animate({ scrollTop: 0 }, 600);
+					return false;
+				}
+				else if(response == 'err01' )
+				{
+					var error = "Please enable curl or file_get_contents to get verified.";	
+					jQuery("#new_err").text(error);
 					jQuery(".err_id").css({"display":"block"});
 					jQuery("html, body").animate({ scrollTop: 0 }, 600);
 					return false;
