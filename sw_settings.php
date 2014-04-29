@@ -144,6 +144,12 @@ Your verification ID is located in your SiteWarranty control panel.
 					jQuery("html, body").animate({ scrollTop: 0 }, 600);
 					return false;
 				}
+				else{
+					jQuery("#new_err").text(response);
+					jQuery(".err_id").css({"display":"block"});
+					jQuery("html, body").animate({ scrollTop: 0 }, 600);
+					return false;
+				}
 		  }
 		});
 		return false;
