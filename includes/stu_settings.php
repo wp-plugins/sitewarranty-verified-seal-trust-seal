@@ -8,7 +8,11 @@ $po = $opts['stu_protocol'];
 ?>
 
 <div class="wrap">
-    <h2>Sitestillup Settings </h2>        
+    <h2>Sitestillup Settings 
+    	<a href="http://www.sitestillup.com/" target="_blank" class="stu-logo">
+			<img src="<?php echo STU_PLUGIN_URL.'includes/img/sitestillup-logo.png'; ?>">
+		</a>
+    </h2>        
 	
     <?php
         if ( 'true' == esc_attr( $_GET['updated'] ) ) echo '<div class="updated" ><p>Sitestillup Settings updated.</p></div>';        
@@ -18,7 +22,8 @@ $po = $opts['stu_protocol'];
     <div id="poststuff">    	
         
         <div class="error settings-error err_id" id="setting-error-settings_updated"> 
-        <p><strong>Enter a valid Sitestillup ID.</strong></p></div>
+        	<p><strong>Enter a valid Sitestillup ID. If you need an account, <a href="https://www.sitestillup.com/cgi-bin/sws/uls_admin.cgi?register" target="_blank">click here</a> to create one.</strong></p>
+        </div>
         <?php settings_errors(); ?>         
         <?php            
 		if ( $pagenow == 'admin.php' && $_GET['page'] == 'warranty_settings' ){ 
@@ -29,8 +34,7 @@ $po = $opts['stu_protocol'];
 			switch ( $tab ){
 				case 'trustseal' :
 					?> 
-                    <table class="seal-table">
-                    <tr><td>
+                    
 					<form class="validate" id="frm" name="pt-settings" method="post" action="<?php echo admin_url(); ?>options.php">
 					<?php settings_fields( 'stu-settings-page' ); ?>
 					<table class="form-table">
@@ -89,36 +93,19 @@ $po = $opts['stu_protocol'];
                         <tr><td><div class="sw_shortcode"><?php echo '[webcertificate style="'.$st.'" size="'.$si.'" protocol="'.$po.'"]';?></div></td></tr>
                     </table>
                      
-                    </td><td valign="top">
-                    	<p><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsitestillup&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></p>
-                    	<p><a href="https://www.sitestillup.com/cgi-bin/sws/uls_admin.cgi" target="_blank">
-                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner2.jpg'; ?>"></a></p>
-                        <p><a href="http://www.sitestillup.com/affiliate-scheme/" target="_blank">
-                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner3.jpg'; ?>"></a></p>
-                        <p><a href="http://www.emailergo.com/" target="_blank">
-                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner1.jpg'; ?>"></a></p>                        
-                    </td></tr>
                     
-                    </table>
 					<?php
 				break;                     
 				case 'settings' : 
 					?>
+                    <table class="seal-table">
+                    <tr><td>
 					<form class="validate" id="frm" name="pt-settings" method="post" action="<?php echo admin_url(); ?>options.php">
 					<?php settings_fields( 'stu_warrenty_id' ); ?>
-					<table class="form-table">
-					<tr>
-                    	<th>&nbsp;</th>
-						<td align="right">
-							<a href="http://www.sitestillup.com/" target="_blank">
-							<img src="<?php echo STU_PLUGIN_URL.'includes/img/sitestillup-logo.png'; ?>">
-							</a>
-						</td>
-                    </tr>
+					<table class="form-table">					
                     <?php if($id==''): ?>
                     <tr>
-                    	<th>&nbsp;</th>
-						<td>							
+                    	<td colspan="2">							
                             <div class="setting_err">
                                 <div style="float:left;">Please create your Sitestillup account to enable website monitoring. Click here to </div>
                                 <a href="https://www.sitestillup.com/cgi-bin/sws/uls_admin.cgi?register" target="_blank">
@@ -138,9 +125,23 @@ $po = $opts['stu_protocol'];
 						</td>
 					</tr> 
 					</table> 
-					<p class="submit" style="clear: both;">                
+					<p class="submit" style="clear: both; float:left;">
+                    	<span class="spinner" style="display: none;"></span>                
 						<input type="button" class="button button-primary" value="Update Settings" onclick="return (val_sw_id());">                            	                        </p>
-					</form>                      
+					</form> 
+                    
+                    </td><td valign="top">
+                    	<p><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsitestillup&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></p>
+                    	<p><a href="https://www.sitestillup.com/cgi-bin/sws/uls_admin.cgi" target="_blank">
+                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner2.jpg'; ?>"></a></p>
+                        <p><a href="http://www.sitestillup.com/affiliate-scheme/" target="_blank">
+                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner3.jpg'; ?>"></a></p>
+                        <p><a href="http://www.emailergo.com/" target="_blank">
+                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner1.jpg'; ?>"></a></p>                        
+                    </td></tr>
+                    
+                    </table>
+                                         
 					<?php
 				break;
 			}				              
@@ -155,6 +156,7 @@ $po = $opts['stu_protocol'];
 <script type="text/javascript">
 function val_sw_id()
 {		
+	jQuery(".spinner").show();
 	var $id = jQuery("#warranty_no").val(); 	
 	jQuery.ajax({
 	  type: "GET",
@@ -162,6 +164,7 @@ function val_sw_id()
 	  cache: false,		
 	  data: {id : $id},
 	  success: function(response) {
+		  	jQuery(".spinner").hide();
 			if(response == 'valid')
 			{								
 				jQuery("#frm").submit();
