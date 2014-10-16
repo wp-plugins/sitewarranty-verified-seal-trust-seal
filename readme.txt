@@ -23,6 +23,6 @@ Why Upgrade? – Sitestillup’s interval check can be increased so your site is
 
 == Installation ==
 
-1. Upload the files to the `/wp-content/plugins/` directory.
+1. Upload the files to `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Sign up for a free Sitestillup account here: <a href="http://www.sitestillup.com" target="_blank">Sitestillup</a> 
