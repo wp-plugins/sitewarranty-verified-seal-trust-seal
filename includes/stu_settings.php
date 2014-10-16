@@ -165,7 +165,7 @@ function val_sw_id()
 	  data: {id : $id},
 	  success: function(response) {
 		  	jQuery(".spinner").hide();
-			if(response == 'valid')
+			if(response.trim() == 'valid')
 			{								
 				jQuery("#frm").submit();
 			}
