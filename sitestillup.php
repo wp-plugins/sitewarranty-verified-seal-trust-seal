@@ -2,9 +2,9 @@
 /* 
 Plugin Name: Sitestillup
 Plugin URI: http://www.sitestillup.com/
-Description: Sitestillup provides round the clock site monitoring and notifies via Email & SMS the instant there's a problem, giving you peace of mind that your website is functioning and virus free 24/7
+Description: Sitestillup provides round the clock site monitoring and notifies via Email & SMS the instant there's a problem, giving you peace of mind.
 Author: Pertly for The Response Control Group
-Version: 2.1
+Version: 2.0
 */
 
 

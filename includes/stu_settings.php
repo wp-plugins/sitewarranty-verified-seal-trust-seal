@@ -90,13 +90,13 @@ $po = $opts['stu_protocol'];
                     </table>
                      
                     </td><td valign="top">
+                    	<p><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsitestillup&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></p>
                     	<p><a href="https://www.sitestillup.com/cgi-bin/sws/uls_admin.cgi" target="_blank">
                         <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner2.jpg'; ?>"></a></p>
                         <p><a href="http://www.sitestillup.com/affiliate-scheme/" target="_blank">
                         <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner3.jpg'; ?>"></a></p>
                         <p><a href="http://www.emailergo.com/" target="_blank">
-                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner1.jpg'; ?>"></a></p>
-                        <p><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsitestillup&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></p>
+                        <img src="<?php echo STU_PLUGIN_URL.'includes/img/banner1.jpg'; ?>"></a></p>                        
                     </td></tr>
                     
                     </table>
