@@ -1,0 +1,77 @@
+/* Sitestillup - Woocommerce */
+.sw_wc_seal
+{
+	float:leftt;
+}
+.sw_wc_seal_cart{
+	float:left;
+}
+#edit-css{
+	width: 598px;
+	height: 397px;
+	resize: none;
+	overflow: auto;
+}
+
+/* Sitestillup */
+.sw_shortcode{
+	background-color: #bbb;
+	width: 362px;
+	height: 50px;
+	line-height: 50px;
+	padding: 10px 0 7px 30px;
+	font-weight: 600;
+}
+.setting_err {
+	background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+}
+.signup{
+	width: 72px;
+	background-color: #fff;
+	height: 30px;
+	padding-right: 20px;
+	margin-left: 12px;
+	float:left;
+	padding: 0px 0px 0px 20px;
+	border-radius: 7px;
+}
+.setting_err a{
+	text-decoration: none;
+	color: #7C7C7C;
+}
+.sw_size{
+	width:45px;
+}
+.sw_add{
+	width:400px;
+}
+.sw_fb{
+	float: right;
+	margin-right: 70px;
+}
+.sw_fb_txt{
+	font-size: 15px;
+	float: left;
+	margin-left: 90px;
+	line-height: 25px;
+}
+.sw_add #im{
+	margin-left: 90px;
+	margin-top: 30px;
+}
+.err_id{
+	display:none;
+}
+.err_id img{
+	height: 15px;
+	float: right;
+	cursor: pointer;
+}
+.seal-table td{
+	vertical-align:top;
+}
