@@ -16,6 +16,7 @@ Included with Sitestillup is our increasingly popular SiteWarranty seal, a third
 FREE? – As you may have seen from our advertising and marketing, Sitestillup is free.  Our free package is for one website with 60 minute interval checks and we’ve even included our SiteWarranty seal with email verification.
 
 Why Upgrade? – Sitestillup’s interval check can be increased so your site is checked every minute, reducing any potential downtime further. When you upgrade to any package, we’ll also upgrade your SiteWarranty seal to verify your businesses phone number and address. And if that wasn’t enough, we even throw in a daily virus scan of your website. 
+
 *SMS messages require the purchase of a SMS pack.
 
 
