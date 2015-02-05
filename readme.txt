@@ -1,10 +1,12 @@
-=== Sitestillup Website Monitoring & Verification ===
+=== WordPress Monitoring Plugin by Sitestillup ===
 Tags: website monitoring, sitestillup, sms alerts, email notifications, website trust seal, website verification, build trust online, free website monitoring
 Requires at least: 3.0.0
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 2.0
 
 == Description ==
+
+Get notified by Email or SMS the instant your WordPress website goes down or develops a fault.
 
 Reliable uptime is an integral part of owning a website. Whilst many hosting companies will claim their service uptime is always above 99%, how do you know? Without physically checking your site every minute of each day, you just can’t be sure your site is online. 
 
