@@ -1,5 +1,5 @@
 === WordPress Monitoring Plugin by Sitestillup ===
-Tags: website monitoring, sitestillup, sms alerts, email notifications, website trust seal, website verification, build trust online, free website monitoring
+Tags: website monitoring, sitestillup, sms alerts, email notifications, website trust seal, website verification, build trust online, free website monitoring, widget, widgets, plugin, shortcode, sidebar, woocommerce
 Requires at least: 3.0.0
 Tested up to: 4.1
 Stable tag: 2.0
